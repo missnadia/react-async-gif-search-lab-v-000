@@ -21,7 +21,11 @@ export default class GifSearch extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <input type="text" value={this.state.query} onChange={this.handleChange} />
+          <input 
+            type="text" 
+            id="query"
+            value={this.state.query} 
+            onChange={this.handleChange} />
         </form>
       </div>
     )
